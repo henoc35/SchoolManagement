@@ -1,1 +1,9 @@
+<div class="parallax-container home-parallax">
+  <h3><?= WEBSITE_NAME; ?></h3>
+  <div class="parallax"><img src="<?= Router::webroot('images/bann1.jpg'); ?>"></div>
+</div>
+
 <h2>Page d'acceuil</h2>
+<div class="container">
+	Dolor eiusmod dolore sit consequat aute aliqua consequat mollit sunt occaecat mollit dolor ex tempor laborum voluptate voluptate culpa minim id deserunt ut sint sunt occaecat sed magna dolore anim laborum exercitation proident sit culpa eu officia duis exercitation deserunt ad sit velit aliquip ea dolore ex cillum aliquip consequat ad anim mollit aute est dolor in in cillum excepteur in proident aute pariatur ullamco dolor dolore irure ut ex in dolore dolor ullamco mollit officia id adipisicing esse sed pariatur excepteur veniam et mollit mollit anim non est fugiat commodo dolore in consectetur proident esse reprehenderit aliqua proident eu exercitation qui incididunt consectetur do proident eu dolore aute nulla adipisicing enim ex quis occaecat nostrud cillum ut fugiat culpa sed ut exercitation officia commodo consequat tempor nulla mollit mollit sunt eu consequat voluptate mollit duis irure non ea veniam esse esse dolore reprehenderit deserunt tempor dolore officia dolore minim nostrud aliquip minim aute duis duis pariatur commodo minim adipisicing cillum aute officia non adipisicing exercitation laborum est ut aliqua laborum velit deserunt proident sunt et sed veniam laborum do consequat reprehenderit aliquip nisi fugiat id laboris sed occaecat ullamco qui sit dolor dolor ut qui in excepteur sit deserunt aliqua laborum tempor deserunt enim labore pariatur ad elit ad dolor irure enim ea excepteur id reprehenderit voluptate labore non irure est do excepteur ea exercitation nisi eiusmod officia nostrud irure enim qui voluptate velit sed minim sit incididunt cillum ut magna tempor sed in.
+</div>

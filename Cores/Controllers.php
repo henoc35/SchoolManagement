@@ -4,7 +4,7 @@
 	*/
 	class Controllers
 	{
-		public $request;				// Objet Request
+	public $request;				// Objet Request
 	private $vars     = [];			// Variable a passer a la vue
 	public $layout    = 'default'; 	// le layout a utiliser pour rendre la vue
 	private $rendered = false;		// Si la vue a été rendu ou pas 
@@ -14,7 +14,7 @@
 	* @param $request Objet request de notre application	
 	**/
 	function __construct($request = null){
-		//$this->Session = new Session();
+		$this->Session = new Session();
 		//$this->Form = new Form($this);
 
 		if ($request) {
@@ -38,9 +38,9 @@
 		extract($this->vars);
 		if($this->request->prefix){
 			if (strpos($view, '/') === 0) {
-				$view = ROOT.DS.'App'.$this->request->prefix.DS.$view.'.php';
+				$view = ROOT.DS.'App'.DS.$this->request->prefix.DS.$view.'.php';
 			} else{
-				$view = ROOT.DS.'App'.$this->request->prefix.DS.$this->request->controller.DS.$view.'.php';
+				$view = ROOT.DS.'App'.DS.$this->request->prefix.DS.$this->request->controller.DS.$view.'.php';
 			}
 		}else{
 			if (strpos($view, '/') === 0) {
@@ -80,7 +80,7 @@
 	*Permet de charger un model
 	*/
 	function loadModel($name){
-		$file = CORE.DS.'models'.DS.$name.'.php';
+		$file = CORE.DS.'Models'.DS.$name.'.php';
 		require_once($file);
 		if (!isset($this->$name)) {
 			$this->$name = new $name;
@@ -96,7 +96,7 @@
 	function e404($message){
 		header("HTTP/1.0 404 Not Found");
 		$this->setVars('message', $message);
-		$this->layout = "errors";
+		//$this->layout = "errors";
 		$this->render('/errors/404');
 		die();
 	}
